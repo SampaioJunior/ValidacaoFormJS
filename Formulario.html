@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro Usuario</title>
+    <script type="text/javascript" src="java.js"></script>
+    <script type="text/javascript" src="http://cidades-estados-js.googlecode.com/files/cidades-estados-v0.2.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            new dgCidadesEstados(document.getElementById('estado'), document.getElementById('cidade'), true);
+        }
+    </script>
+    <link rel="stylesheet" href="cor.css">
+</head>
+<body>
+    <form id="formulario" name="formulario">
+       <label>Nome :</label> <input  type="text" name="nome" ><br><br>
+        <label>Idade :</label> <input type="text" name="nome" ><br><br>
+        <label>E-mail : </label> <input type="text" name="email" onblur="validacaoEmail(formulario.email)" > <div id="msgemail"></div><br><br>
+        <label>Telefone :</label> <input type="text" name="telefone" onblur="test(formulario.telefone)" placeholder="(64) 8888-8888 " ><br><br>
+
+        <div id="sexos">
+            <label>Sexo<br><br>
+            <label >Feminino :</label> <input type="radio" value="Feminino" name="sexo">
+            <label>Masculino :</label> <input type="radio" value="Masculino" name="sexo"><br><br>
+            </label>
+        </div>
+        <label>Linguas faladas</label><br><br>
+
+        <div id="valid">
+            <input type="checkbox" name="opcoes" value="Portugues"/>Português <br/>
+            <input type="checkbox" name="opcoes" value="ingles"/>Inglês <br/>
+            <input type="checkbox" name="opcoes" value="espanhol"/>Espanhol <br/>
+        </div>
+        <br>
+
+
+        <select id="estado" name="nome1"></select><br><br>
+
+        <select id="cidade" name="nome1"></select><br><br>
+
+        <button type="button" onclick="validar()">Enviar</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+form{
+    margin: 0 auto;
+    max-width: 50%;
+}
+#forma{
+    width: 100%;
+    background: rgba(255,255,255,.3);
+    border-radius: 5px;
+    text-shadow: rgba(0,0,0,.5) 1px 1px 0;
+    box-shadow: rgba(0,0,0,.2) 0 0 3px;
+    text-align: center;
+    padding: 3em 1em;
+}
+
